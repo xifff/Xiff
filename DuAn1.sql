@@ -10,10 +10,19 @@ CREATE TABLE KH (
 
 CREATE TABLE HoaDon (
 	MaHD nvarchar(10) not null PRIMARY KEY,
+	MaNV /////////////////////,
+	NgayLap date,
+	MaKH nvarchar(10),
 );
 
 CREATE TABLE HoaDonChiTiet (
 	MaHD nvarchar(10) not null PRIMARY KEY,
+	MaNV ///////////////////////,
+	NgayLap date,
+	SoLuong int,
+	GiaSP Decimal,
+	MaSP nvarchar(10),
+	TongCong money
 );
 
 CREATE TABLE SP (
@@ -35,11 +44,15 @@ CREATE TABLE TH (
 
 CREATE TABLE BaoHanh (
 	MaBH nvarchar(10) not null PRIMARY KEY,
+	MaSP nvarchar(10), 
 	NgayBH DATE,
-	NgayHetHan DATE
+	NgayHetHan DATE,
+	FOREIGN KEY (MaSP) REFERENCES SP(MaSP)
 );
 
 CREATE TABLE BaoHanhChiTiet (
 	MaBH nvarchar(10) not null PRIMARY KEY,
+	MaHD nvarchar(10),
+	MaSP nvarchar(10),
 	BaoLoi nvarchar(100)
 );
