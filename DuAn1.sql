@@ -57,7 +57,7 @@ CREATE TABLE BaoHanhChiTiet (
 	BaoLoi nvarchar(100)
 );
 
-create table NHANVIEN(
+CREATE TABLE NHANVIEN(
   MANV nvarchar(20) PRIMARY KEY NOT NULL,
   MATKHAU nvarchar(50) NOT NULL,
   HOTEN nvarchar(50) NOT NULL,
