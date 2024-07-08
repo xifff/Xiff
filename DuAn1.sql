@@ -13,7 +13,7 @@ CREATE TABLE HoaDon (
 	MaNV nvarchar(20),
 	NgayLap date,
 	MaKH nvarchar(10),
-	FOREIGN KEY (MaNV) REFERENCES NV(MaNV)
+	FOREIGN KEY (MaNV) REFERENCES NHANVIEN(MaNV)
 );
 
 CREATE TABLE HoaDonChiTiet (
@@ -24,7 +24,7 @@ CREATE TABLE HoaDonChiTiet (
 	GiaSP Decimal,
 	MaSP nvarchar(10),
 	TongCong money
-	FOREIGN KEY (MaNV) REFERENCES NV(MaNV)
+	FOREIGN KEY (MaNV) REFERENCES NHANVIEN(MaNV)
 );
 
 CREATE TABLE SP (
