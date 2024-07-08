@@ -56,3 +56,11 @@ CREATE TABLE BaoHanhChiTiet (
 	MaSP nvarchar(10),
 	BaoLoi nvarchar(100)
 );
+
+create table NHANVIEN(
+  MANV nvarchar(20) PRIMARY KEY NOT NULL,
+  MATKHAU nvarchar(50) NOT NULL,
+  HOTEN nvarchar(50) NOT NULL,
+  SODIENTHOAI nvarchar(10) NOT NULL,  
+  VAITRO bit default 0
+);
