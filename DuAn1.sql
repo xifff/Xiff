@@ -10,14 +10,14 @@ CREATE TABLE KH (
 
 CREATE TABLE HoaDon (
 	MaHD nvarchar(10) not null PRIMARY KEY,
-	MaNV /////////////////////,
+	MaNV nvarchar(20),
 	NgayLap date,
 	MaKH nvarchar(10),
 );
 
 CREATE TABLE HoaDonChiTiet (
 	MaHD nvarchar(10) not null PRIMARY KEY,
-	MaNV ///////////////////////,
+	MaNV nvarchar(20),
 	NgayLap date,
 	SoLuong int,
 	GiaSP Decimal,
